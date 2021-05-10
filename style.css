@@ -1,0 +1,66 @@
+:root {
+  --background-gradient: linear-gradient(
+    0deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+  --background-color: hsla(186, 33%, 94%, 1);
+  --background-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ebf4f5", endColorstr="#b5c6e0", GradientType=1 );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+.main-txt {
+  font-size: 5rem;
+  font-weight: bold;
+}
+.main-img {
+  max-height: 70vh;
+}
+.container-day,
+.container-hour,
+.container-min,
+.container-sec {
+  cursor: progress;
+}
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--background-color);
+  background: var(--background-gradient);
+  filter: var(--background-filter);
+}
+.countdown {
+  display: flex;
+  justify-content: space-around;
+}
+.day,
+.hour,
+.min,
+.sec {
+  font-size: 3rem;
+}
+.container-day:hover {
+  scale: 120%;
+  transition: all 50ms ease-in-out;
+}
+.container-hour:hover {
+  scale: 120%;
+  transition: all 50ms ease-in-out;
+}
+.container-min:hover {
+  scale: 120%;
+  transition: all 50ms ease-in-out;
+}
+.container-sec:hover {
+  scale: 120%;
+  transition: all 50ms ease-in-out;
+}
